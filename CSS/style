@@ -1,0 +1,357 @@
+body 
+{
+  background-color: hsl(41, 59%, 85%);
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #797272;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color:darkgoldenrod;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/*Taget från RWD exempelkod men modiefierat för bättre passning för min sida*/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive
+  {
+    position: relative;
+  }
+
+  .topnav.responsive.icon 
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a 
+  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1201px) 
+{
+  .topnav a 
+  {
+    font-size: 20px;
+  }
+
+  .topnav .icon
+  {
+    display: none;
+  }
+  .topnav a:not(:first-child)
+  {
+    display: block;
+  }
+  
+}
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:rgb(125, 141, 88);
+  color: white;
+  text-align: center;
+  z-index: auto;
+}
+
+span {
+  color: red;
+}
+
+::placeholder {
+  font-style: italic;
+}
+error {
+  border: 1px solid red;
+}
+.errorHidden {
+  display: none;
+  margin-bottom: 0%;
+}
+
+@keyframes errorAnimation {
+  from {
+    color: white;
+  }
+  to {
+    color: red;
+  }
+}
+
+.errorVisible {
+  font-style: italic;
+  color: red;
+  display: block;
+  margin: 0px;
+  animation-name: errorAnimation;
+  animation-duration: 1.5s;
+}
+
+#show {
+  display: block;
+}
+
+#hide {
+  display: none;
+}
+
+label {
+  display: block;
+} 
+
+form div input 
+{
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/*style för index*/
+#container
+{ 
+  width: 100%;
+  background-image:url(/Img/pexels-james-frid-17287166.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
+ 
+}
+
+.w3-third 
+{
+  width: 40%;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  border-radius: 1px solid transparent;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+}
+
+.bee
+{
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 80px;
+}
+
+ul
+{
+  list-style: none;
+}
+
+.links
+{
+  font-size: 20px;
+  text-align: center;
+}
+
+#form,.draggable, .droppable, .field, .drop, .links, #myModal
+{
+  background-color: rgba(255, 255, 255, 0.2);
+  width:100%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  text-align: center;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.form h1
+{
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+#progress-bar
+{
+  width: 100%;
+  height: 20px;
+  background-color: #ccc;
+}
+
+.ui-progressbar .ui-progressbar-value
+{
+  background: green;
+}
+
+.btn, .form-grupp
+{
+  color:#222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0,3s;
+}
+
+.btn:hover:not([disabled])
+{
+  background: #222;
+  color: #fff;
+}
+
+.btn:disabled 
+{
+  cursor: no-drop;
+}
+
+#next-btn
+{
+  background: gray;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+.correct 
+{
+  background: #9aeabc;
+}
+
+.incorrect 
+{
+  background: #ff9393;
+}
+
+.draggable 
+{
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.droppable 
+{
+  width: 200px;
+  height: 200px;
+  background-color: #e74c3c;
+  position: relative;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  margin-left: auto;
+}
+
+.dropped
+{
+  background-color: #4caf50;
+}
+
+.ui-dialog .ui-dialog-titlebar-close 
+{
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#myModal
+{
+  display: none;
+
+}
+
+.field
+{
+  display: flex;
+  justify-content: center;
+}
+
+
+#bt 
+{
+  width: 100%;
+}
+/*#bt
+{
+  margin-top:  15px;
+  width: 100%;
+  height: 45px;
+  background-color:  #f2796e;
+  border: 2px solid,  #f2796e;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}*/
+
+
+
+
+
