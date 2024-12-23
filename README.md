@@ -3,5 +3,4 @@
 <p>It´s like simulating real time problems when a developer gets intsructed to change somethings i the website. 
 It is still a work in progress, specially the contact form part. Please go easy on me.</p>
 <p>My goal: </p>
-Improve the contact section. I want to save users input i a database and make it look better.
-Better responsiveness
+Improve the contact section. I want to save users input in a database with better UI, responsiveness and change the whole website adapting market standards.
